@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e6f79c87b23f4ce481328884f9bcbb58" Name="Diagram1">
+        <EntityTypeShape EntityType="Book_MngModel.Author" Width="1.5" PointX="0.875" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Book_MngModel.Category" Width="1.5" PointX="0.625" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Book_MngModel.Publisher" Width="1.5" PointX="0.875" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Book_MngModel.Search" Width="1.5" PointX="6" PointY="3.75" IsExpanded="true" />
+        <AssociationConnector Association="Book_MngModel.FK__Search__AuthorID__7D439ABD" ManuallyRouted="false" />
+        <AssociationConnector Association="Book_MngModel.FK__Search__Category__7E37BEF6" ManuallyRouted="false" />
+        <AssociationConnector Association="Book_MngModel.FK__Search__Publishe__7F2BE32F" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="Book_MngModel.Books1" Width="1.5" PointX="3.125" PointY="3" />
+        <AssociationConnector Association="Book_MngModel.FK__Books1__AuthorID__29221CFB" />
+        <AssociationConnector Association="Book_MngModel.FK__Books1__Category__2A164134" />
+        <AssociationConnector Association="Book_MngModel.FK__Books1__Publishe__2B0A656D" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

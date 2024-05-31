@@ -1,0 +1,35 @@
+﻿@model IEnumerable<Book_Managemant.Models.Category>
+
+
+<table class="table table-striped  text-white" border="1">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CategoryName)
+        </th>
+        <th class="text-white"></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td class="text-white">
+                @Html.DisplayFor(modelItem => item.CategoryName)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.CategoryID }, new { @class = "btn3 text-white " }) |
+                @Html.ActionLink("Details", "Details", new { id = item.CategoryID }, new { @class = "btn4 text-white " }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.CategoryID }, new { @class = "btn5 text-white " }) |
+
+
+            </td>
+        </tr>
+    }
+
+
+
+</table>
+<p>
+    @Html.ActionLink("Create New", "Create", null, new { @class = "btn6 fw-bold" })
+</p>
+
+<a href="https://localhost:44370/Publishers/Create" class="btn1 but px-4 py-2 fw-bold fs-5">Next</a>

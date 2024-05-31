@@ -1,0 +1,107 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body { /*
+     background-image: url('../images/home-banner.jpg');*/
+    background-image: url('../images/side-view-book-shelves-modern-library-interior-with-chrome-lamps-top-wooden-concrete-floor-light-ceiling-3d-rendering_670147-8686.jpg');
+    background-repeat: no-repeat;
+    /*   background-image: url('../images/contact-form-09.jpg');*/
+   /* background-image: url('../images/whatsapp image 2024-05-30 at 15.42.17_c31c3a05.jpg');*/
+    object-fit: contain;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    backface-visibility: visible;
+    /*  border-image:fill 0 linear-gradient(#0003,#000);*/
+    height: 100%;
+   
+
+}
+.btn {
+    background-color: orange;
+    color: darkblue;
+}
+    .btn:hover {
+        background-color: black;
+        color: white;
+    }
+   .home2{
+       margin-top:
+    }
+.btn1 {
+    background-color: black;
+    color: white;
+    border-radius :5px;
+    text-decoration:none;
+   
+}
+.btn6 {
+    background-color: lightblue;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    color:black;
+}
+.btn6:hover{
+    background-color:aliceblue;
+    color:blue;
+
+}
+    .btn1:hover {
+        background-color: aliceblue;
+        color: black;
+        
+    }
+.btn3{
+    background-color:green;
+    color:white;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left:15px;
+    padding-right:15px;
+    border-radius:4px;
+    text-decoration:none;
+}
+.btn4 {
+    background-color: blue;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+.btn5 {
+    background-color: red;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+/*h1{
+    background:linear-gradient(90deg,#00ffff,#ff00c3);
+    -webkit-background-clip: text;
+    background-clip :text;
+    -webkit-text-fill-color:transparent;
+}*/
+.home2{
+    margin-top:100px;
+}   
+
+   
+
+
+
+

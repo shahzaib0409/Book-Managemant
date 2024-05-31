@@ -1,0 +1,37 @@
+﻿@model IEnumerable<Book_Managemant.Models.Publisher>
+
+
+
+
+
+<div class="  bg-black  bg-opacity-50">
+    <table class="table table-striped text-white text-center align-items-center " border=" 1">
+        <tr>
+            <th class="text-white text-center align-items-center">
+                @Html.DisplayNameFor(model => model.PublisherName)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PublisherName)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.PublisherID }, new { @class = "btn3 text-white " }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.PublisherID }, new { @class = "btn4 text-white " }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.PublisherID }, new { @class = "btn5 text-white " }) |
+                </td>
+            </tr>
+        }
+
+    </table>
+    </div>
+    <p>
+        @Html.ActionLink("Create New", "Create", null, new { @class = "btn6 fw-bold" })
+    </p>
+    <a href="https://localhost:44370/Books11/Create" class="btn1 but px-4 py-2 fw-bold fs-5">Next</a>
+
+
