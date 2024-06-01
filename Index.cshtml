@@ -1,0 +1,64 @@
+﻿@model IEnumerable<Book_Managemant.Models.Search>
+<p>
+    <div class="bg-black  bg-opacity-50">
+        @using (Html.BeginForm("Index", "Searches", FormMethod.Get))
+        {
+            <h2 class="text-white">Search By</h2>
+            <div class="text-white ">
+
+                @Html.RadioButton("searchBy", "Name", true)<text>Name</text>
+                @Html.RadioButton("searchBy", "CategoryName")<text>CategoryName</text>
+                @Html.TextBox("search", "", htmlAttributes: new { @class = "w-50 form-control" })
+                <input type="submit" value="Search" class="btn btn-success" />
+            </div>
+
+        }
+</p>
+<table class="table">
+    <tr>
+        <th class="text-white fw-bold">
+            @Html.DisplayNameFor(model => model.Author.Name)
+        </th>
+        <th class="text-white fw-bold">
+            @Html.DisplayNameFor(model => model.Category.CategoryName)
+        </th>
+        <th class="text-white fw-bold">
+            @Html.DisplayNameFor(model => model.Publisher.PublisherName)
+        </th>
+        <th></th>
+    </tr>
+
+    @if (Model.Count() == 0)
+    {
+        <tr>
+            <td class="text-white fw-bold" colspan="4">NO Data Found</td>
+        </tr>
+    }
+    else
+    {
+        foreach (var item in Model)
+        {
+            <tr>
+                <td class="text-white">
+                    @Html.DisplayFor(modelItem => item.Author.Name)
+                </td>
+                <td class="text-white">
+                    @Html.DisplayFor(modelItem => item.Category.CategoryName)
+                </td>
+                <td class="text-white">
+                    @Html.DisplayFor(modelItem => item.Publisher.PublisherName)
+                </td>
+                <td class="text-white">
+                    @Html.ActionLink("Edit", "Edit", new { id = item.BookNum }, new { @class = "btn3 text-white " }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.BookNum }, new { @class = "btn4 text-white " }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.BookNum }, new { @class = "btn5 text-white " })
+                </td>
+            </tr>
+        }
+    }
+
+</table>
+</div>
+<p>
+    @Html.ActionLink("Create New", "Create", null, new { @class = "btn6 fw-bold" })
+</p>
